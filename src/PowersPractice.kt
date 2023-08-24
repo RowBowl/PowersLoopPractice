@@ -28,7 +28,14 @@ fun main() {
 }
 
 fun printPower(numOne: Int, numTwo: Int) {
-    println("input was valid, todo, calculate powers")
+    //println("input was valid, todo, calculate powers")
+    var numFinal = numOne
+    var count = 1
+    while(count < numTwo){
+        numFinal *= numOne
+        count++
+    }
+    println("$numOne to the power of $numTwo is $numFinal")
 }
 
 
